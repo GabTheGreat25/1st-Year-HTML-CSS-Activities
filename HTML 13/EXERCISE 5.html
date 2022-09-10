@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quadratic Curves</title>
+</head>
+
+<body>
+	<canvas id = "drawRoundRect" width = "130" height = "130"
+			style = "border: 1px solid black;">
+	</canvas>
+	<script>
+		var canvas = document.getElementById("drawRoundRect");
+		var context = canvas.getContext("2d")
+		context.beginPath();
+		context.moveTo(15, 5);
+		context.lineTo(95, 5);
+		context.quadraticCurveTo(105, 5, 105, 15);
+		context.lineTo(105, 95);
+		context.quadraticCurveTo(105, 105, 95, 105);
+		context.lineTo(15, 105);
+		context.quadraticCurveTo(5, 105, 5, 95);
+		context.lineTo(5, 15);
+		context.quadraticCurveTo(5, 5, 15, 5);
+		context.closePath();
+		context.fillStyle = "yellow";
+		context.fill();
+		context.strokeStyle = "royalblue";
+		context.lineWidth = 6;
+		context.stroke();
+	</script>
+</body>
+</html>
+

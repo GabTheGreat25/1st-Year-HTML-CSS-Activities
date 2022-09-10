@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shadow</title>
+</head>
+<body>
+	<canvas id = "shadow" width = "525" height = "250"
+			style = "border: 1px solid black;">
+	</canvas>
+	<script>
+		var canvas = document.getElementById("shadow");
+		var context = canvas.getContext("2d")
+		context.shadowBlur = 10;
+		context.shadowOffsetX = 15;
+		context.shadowOffsetY = 15;
+		context.shadowColor = "blue";
+		context.fillStyle = "cyan";
+		context.fillRect(25, 25, 200, 200);
+		
+		context.shadowBlur = 20;
+		context.shadowOffsetX = -20;
+		context.shadowOffsetY = -20;
+		context.shadowColor = "gray";
+		context.fillStyle = "magenta";
+		context.fillRect(300, 25, 200, 200);
+	</script>
+</body>
+</html>

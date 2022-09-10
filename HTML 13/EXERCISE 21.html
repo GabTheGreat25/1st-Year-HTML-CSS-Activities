@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- Fig 14.37 saveandrestore.html -->
+<!-- Saving the current state restoring the previous state. -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Save and Restore</title>
+</head>
+
+<body>
+	<canvas id = "save" width = "400" height = "200">
+	</canvas>
+<script>
+		function draw()
+		{
+			var canvas = document.getElementById("save");
+			var context = canvas.getContext("2d")
+			
+			// draw rectangle and save the settings
+			context.fillStyle = "red"
+			context.fillRect(0, 0, 400, 200);
+			context.save();
+			
+			context.fillStyle = "orange"
+			context.fillRect(0, 40, 400, 160);
+			context.save();
+			
+			context.fillStyle = "yellow"
+			context.fillRect(0, 80, 400, 120);
+			
+			context.restore();
+			context.fillRect(0, 120, 400, 40);
+		}
+		
+		window.addEventListener( "load", draw, false);
+	</script>
+</body>
+</html>
+

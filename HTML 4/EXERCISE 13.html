@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Melting Images</title>
+	<style type = "text/css">
+	#cover
+		{
+			position: relative;
+			margin: 0 auto;
+		}
+	#cover img
+		{
+			position: absolute;
+			left: 0;
+			-webkit-transition: opacity 4s easi-in-out;
+			transition: opacity 4s ease-in-out;
+		}
+	#cover img.top:hover
+		{ opacity: 0; }
+	</style>
+</head>
+
+<body>
+	<div id = "cover">
+	<img class = "bottom" src = "Pictures/java.jpg" alt = "Java 9e cover">
+	<img class = "top" src = "Pictures/TheJava.jpg" alt = "Java 8e cover">
+	</div>
+</body>
+</html>

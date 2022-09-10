@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pattern</title>
+	<script>
+		var image = new Image();
+		image.src = "https://tse4.mm.bing.net/th?id=OIP.djHhWcb1qGWiOXfw3Q5KhwHaEo&pid=Api&P=0&w=249&h=156";
+		
+		function start()
+		{
+			var canvas = document.getElementById("pattern");
+			var context = canvas.getContext("2d");
+			var pattern = context.createPattern(image, "repeat");
+			context.rect(5, 5, 385, 200);
+			context.fillStyle = pattern;
+			context.fill();
+		}
+		window.addEventListener("load", start, false);
+	</script>
+</head>
+
+<body>
+	<canvas id = "pattern" width = "400" height = "200"
+			style = "border: 1px solid black;"></canvas>
+</body>
+</html>

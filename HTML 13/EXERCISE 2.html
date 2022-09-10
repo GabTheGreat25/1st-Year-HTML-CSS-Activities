@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Drawing Lines</title>
+</head>
+<body>
+	<canvas id = "drawLines" width = "400" height = "200" style = "border: 1px solid black;">
+	</canvas>
+	<script>
+		var canvas = document.getElementById("drawLines");
+		var context = canvas.getContext("2d")
+		
+		context.beginPath();
+		context.moveTo(10, 10);
+		context.lineTo(390, 10);
+		context.lineTo(390, 30);
+		context.lineTo(10, 30);
+		context.lineWidth = 10;
+		context.lineJoin = "bevel"
+		context.lineCap = "butt";
+		context.strokeStyle = "red"
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(40, 75);
+		context.lineTo(40, 55);
+		context.lineTo(360, 55);
+		context.lineTo(360, 75);
+		context.lineWidth = 20;
+		context.lineJoin = "round"
+		context.lineCap = "round";
+		context.strokeStyle = "orange"
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(10, 100);
+		context.lineTo(390, 100);
+		context.lineTo(390, 130);
+		context.closePath()
+		context.lineWidth = 10;
+		context.lineJoin = "miter"
+		context.strokeStyle = "green"
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(40, 140);
+		context.lineTo(360, 190);
+		context.lineTo(360, 140);
+		context.lineTo(40, 190);
+		context.lineWidth = 5;
+		context.lineJoin = "butt";
+		context.strokeStyle = "blue"
+		context.stroke();
+	</script>
+</body>
+</html>
+

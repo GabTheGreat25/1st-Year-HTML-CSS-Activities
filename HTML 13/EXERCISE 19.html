@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Fig. 14.26: cannon.html -->
+<!-- Cannon Game HTML5 document. -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Cannon Game</title>
+		<style type = "text/css">
+			canvas { border: 1px solid black; }
+		</style>
+		<script src = "EXERCISE 20.js"></script>
+	</head>
+	<body>
+		<audio id = "blockerSound" preload = "auto">
+			<source src = "Sound Effects/Block Hit.mp3" type = "audio/mpeg"></audio>
+		<audio id = "targetSound" preload = "auto">
+			<source src = "Sound Effects/Target-Hit.mp3" type = "audio/mpeg"></audio>
+		<audio id = "cannonSound" preload = "auto">
+			<source src = "Sound Effects/Cannon Sound.mp3" type = "audio/mpeg"></audio>
+		<canvas id = "theCanvas" width = "480" height = "600"></canvas>
+		<p><input id = "startButton" type = "button" value = "Start Game">
+		</p>
+	</body>
+</html>

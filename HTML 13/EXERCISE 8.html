@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Radial Gradients</title>
+</head>
+
+<body>
+	<canvas id = "radialGradient" width = "200" height = "200"
+		style = "border: 1px solid black;">
+	</canvas>
+	<script>
+		var canvas = document.getElementById("radialGradient");
+		var context = canvas.getContext("2d")
+		var gradient = context.createRadialGradient(100, 100, 10, 100, 100, 125);
+		gradient.addColorStop(0, "white");
+		gradient.addColorStop(0.5, "yellow");
+		gradient.addColorStop(0.75, "orange");
+		gradient.addColorStop(1, "red");
+		context.fillStyle = gradient;
+		context.fillRect(0, 0, 200, 200);
+	</script>
+	
+	<canvas id = "radialGradient2" width = "200" height = "200"
+		style = "border: 1px solid black;">
+	</canvas>
+	<script>
+		var canvas = document.getElementById("radialGradient2");
+		var context = canvas.getContext("2d")
+		var gradient = context.createRadialGradient(20, 150, 10, 100, 100, 125);
+		gradient.addColorStop(0, "red");
+		gradient.addColorStop(0.5, "orange");
+		gradient.addColorStop(0.75, "yellow");
+		gradient.addColorStop(1, "white");
+		context.fillStyle = gradient;
+		context.fillRect(0, 0, 200, 200);
+	</script>
+</body>
+</html>
+

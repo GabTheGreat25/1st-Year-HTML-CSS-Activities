@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- Fig. 11.17: FavoriteTwitterSearches.html -->
+<!-- Favorite Twitter Searches Web Application. -->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Twitter Searches</title>
+		<link rel = "stylesheet" type="text/css" href="EXERCISE 10.css">
+		<script src="EXERCISE 11.js"></script>
+	</head>
+
+	<body>
+		<h1>Favorite Twitter Searches</h1>
+		<p id="welcomeMessage"></p>
+		<form action="#">
+			<p><input id="query" type="text"
+				placeholder = "Entery Twitter search query">
+				<a href="https://dev.twitter.com/docs/using-search>">
+				Twitter search operators</a></p>
+		<p><input id = "tag" type="text" placeholder="Tag your query">
+			<input type="button" value="Save"
+				   id= "saveButton">
+			<input type="button" value="Clear All Saved Searches"
+				   id= "clearButton"></p>
+		</form>
+		<h1>Previously Tagged Searches</h1>
+		<div id="searches"></div>
+	</body>
+</html>

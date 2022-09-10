@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Drawing a rectangle</title>
+</head>
+<body>
+	<canvas id = "drawRectangle" width = "300" height="100"
+		style = "border: 1px solid black;">
+
+	</canvas>
+	<script>
+		var canvas = document.getElementById("drawRectangle");
+		var context = canvas.getContext("2d")
+		context.fillStyle = "yellow";
+		context.fillRect(5, 10, 200, 75);
+		context.strokeStyle = "royalblue";
+		context.lineWidth = 6;
+		context.strokeRect(4, 9, 201, 76);
+	</script>
+</body>
+</html>

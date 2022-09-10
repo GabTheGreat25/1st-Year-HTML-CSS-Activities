@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Arcs And Circles</title>
+</head>
+
+<body>
+	<canvas id = "drawArcs" width = "300" height = "100">
+	</canvas>
+	<script>
+		var canvas = document.getElementById("drawArcs");
+		var context = canvas.getContext("2d")
+		
+		context.beginPath();
+		context.arc(35, 50, 30, 0, Math.PI * 2);
+		context.fillStyle = "mediumslateblue";
+		context.fill();
+		
+		context.beginPath();
+		context.arc(110, 50, 30, 0, Math.PI, false);
+		context.stroke();
+		
+		context.beginPath();
+		context.arc(185, 50, 30, 0, Math.PI, true);
+		context.fillStyle = "red";
+		context.fill();
+		
+		context.beginPath();
+		context.arc(260, 50, 30, 0, 3 * Math.PI / 2);
+		context.strokeStyle = "darkorange";
+		context.stroke();
+	</script>
+</body>
+</html>
+ 
+
+	

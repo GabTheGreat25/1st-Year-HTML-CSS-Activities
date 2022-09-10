@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Image Border</title>
+        <style type = "text/css">
+            img
+            {
+                width: 234px;
+                padding: 20px 20px;
+            }
+            div
+            {
+                border: 30px solid transparent;
+                width: 234px;
+                padding: 20px 20px;
+            }
+            #stretch
+            {
+                -webkit-border-image: url("Pictures/MonKee.jpg") 80 80 80 80 stretch;
+                -moz-border-image: url("Pictures/MonKee.jpg") 80 80 80 80 stretch;
+                -o-border-image: url("Pictures/MonKee.jpg") 80 80 80 80 stretch;
+                border-image:url("Pictures/MonKee.jpg") 80 80 80 80 stretch;
+            }
+            #repeat
+            {
+                -webkit-border-image: url("Pictures/MonKee.jpg") 34% 34% repeat;
+                -moz-border-image: url("Pictures/MonKee.jpg") 34% 34% repeat;
+                -o-border-image: url("Pictures/MonKee.jpg") 34% 34% repeat;
+                border-image:url("Pictures/MonKee.jpg") 34% 34% repeat;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Image Borders</h2>
+        <img src = "Pictures/MonKee.jpg" alt = "image used to demonstrate borders">
+        <p><div id = "stretch">Stretching the image border</div></p>
+        <p><div id = "repeat">Repeating the image border</div></p>
+    </body>
+    
+</html>

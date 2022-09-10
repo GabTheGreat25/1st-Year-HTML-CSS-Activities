@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bezier Curves</title>
+</head>
+
+<body>
+	<canvas id = "drawBezier" width = "150" height = "150"
+			style = "border: 1px solid black;">
+	</canvas>
+	<script>
+		var canvas = document.getElementById("drawBezier");
+		var context = canvas.getContext("2d")
+		context.beginPath();
+		context.moveTo(115, 20);
+		context.bezierCurveTo(12, 37, 176, 77, 32, 133);
+		context.lineWidth = 10;
+		context.strokeStyle = "red";
+		context.stroke();
+	</script>
+</body>
+</html>

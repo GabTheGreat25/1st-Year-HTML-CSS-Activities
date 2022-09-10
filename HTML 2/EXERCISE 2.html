@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>New HTML5  autocomplete Attribute  and datalist Element</title>
+</head>
+
+<body>
+	<h1>Autocomplete and Datalist Demo</h1>
+	<p>This form demonstrates the new HTML5 autocomplete attribute and the datalist element.</p>
+	
+	<form method = "post" autocomplete = "on">
+	<p><label>First Name:
+		<input type = "text" id = "firstName"
+			   placeholder = "First name" />
+		(First Name)
+		</label>
+		</p>
+		
+		<p><label>Last Name:
+			<input type = "text" id = "lastName"
+				   placeholder = "Last name" />
+			(Last Name)
+			</label>
+		</p>
+		
+		<p><label>Email:
+			<input type = "email" id = "email"
+				   placeholder = "name@domain.com" />
+			(namedomain.com)
+			</label>
+		</p>
+		
+		<p><label> for = "txtlist" Birth Month:
+			<input type = "text" id = "txtlist"
+				   placeholder = "Select a month" list = "months" />
+			<datalist id = "months">
+			<option value = "January">
+			<option value = "February">
+			<option value = "March">
+			<option value = "April">
+			<option value = "May">
+			<option value = "June">
+			<option value = "July">
+			<option value = "August">
+			<option value = "September">
+			<option value = "October">
+			<option value = "November">
+			<option value = "December">
+				
+					</option></option></option></option></option></option></option></option></option></option></option></option></datalist>
+			</label></p>
+				
+				<p>
+				<input type = "submit" value = "Submit" />
+				<input type = "reset" valye = "Clear" />
+				</p>
+	</form> 
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Fig. 9.4: RandomInt.html -->
+<!-- Random integers, shifting and scaling. -->
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Shifted and Scaled Random Integers</title>
+<style type = "text/css">
+p, o1 { margin: 0; }
+li { display: inline; margin-right: 10px; }
+</style>
+<script>
+	
+var value;
+	
+document.writeln( "<p>Random Numbers</p><ol>" );
+	
+for ( var i = 1; i <= 30; ++i )
+{
+value = Math.floor( 1 + Math.random() * 6 );
+document.writeln( "<li>" + value + "</li>" );
+} // end for
+
+document.writeln( "</ol>" );
+</script>
+</head><body></body>
+</html>

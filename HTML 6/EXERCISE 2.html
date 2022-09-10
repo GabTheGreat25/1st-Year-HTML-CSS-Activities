@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Class Average Program: Sentinel-controlled Repitition</title>
+        <script>
+
+            var total;
+            var gradeCounter;
+            var grade;
+            var gradeValue;
+            var average;
+
+            total = 0;
+            gradeCounter = 0;
+
+            grade = window.prompt("Enter Integer Grade, -1 to Quit:", "0");
+
+            gradeValue = parseInt(grade);
+
+            while( gradeValue != -1)
+            {
+                total = total + gradeValue;
+
+                gradeCounter = gradeCounter + 1;
+
+                grade = window.prompt("Enter Integer Grade, -1 to Quit:", "0");
+
+                gradeValue = parseInt(grade);
+            }
+
+            if( gradeCounter !=0 )
+            {
+                average = total / gradeCounter;
+
+                document.writeln("<h1>Class average is " + average + "</h1>");
+            }
+            else
+                document.writeln("<p>No grades were entered</p>");
+           
+
+        </script>
+    </head><body></body>
+</html>

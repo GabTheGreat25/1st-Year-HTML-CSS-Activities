@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Images</title>
+	<script>
+		var image = new Image();
+		image.src = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/yellow-daisy-high-res-stock-photography-934506752-1548428317.jpg?crop=0.98993xw:1xh;center,top&resize=480:*";
+		
+		function draw()
+		{
+			var canvas = document.getElementById("myimage");
+			var context = canvas.getContext("2d")
+			context.drawImage(image, 0, 0, 175,175);
+		}
+		window.addEventListener( "load", draw, false );
+	</script>
+</head>													
+<body>
+	<canvas id = "myimage" width = "200" height = "200"
+			style = "border: 1px solid black;">
+	</canvas>
+</body>
+</html>
+ 

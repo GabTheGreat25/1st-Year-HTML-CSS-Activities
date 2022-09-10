@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Multiple Backgrounds</title>
+	<style type = "text/css">
+	div.background
+		{
+			background-image: url("Pictures/deitellogo.png") , url("Pictures/OCEAN.jpg");
+			background-position: bottom right, 100% center;
+			background-origin: border-box, content-box;
+			background-repeat: no-repeat, repeat;
+		}
+		div.content
+		{
+			padding: 10px 15px;
+			color: white;
+			font-size: 150%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class = "background">
+	<div class = "content">
+		<p>Deitel & Associates, Inc., is an internationally recognized
+		authoring and corporate training organization. The company
+		offers instructor-led courses delivered at client sites
+		worldwide on programming languages and other software topics
+		such as C++, Visual C++<sup>&reg;</sup>, C, Java&trade;,
+		C#<sup>&reg;</sup>, Visual Basic<sup>&reg;</sup>,
+		Objective-C<sup>&reg;</sup>, XML<sup>&reg;</sup>,
+		Python<sup>&reg;</sup>, JavaScript, object technology,
+		Internet and web programming, and Android and iPhone app development.</p>
+		</div>
+	</div>
+</body>
+</html>

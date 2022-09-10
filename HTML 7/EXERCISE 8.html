@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--  Fig. 8.12: ContinueTest.html -->
+<!--  Using the continue statement in a for statement. -->
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+Using the continue Statement in a for Statement
+</title>
+<script>
+	
+for ( var count = 1; count <= 10; ++count )
+{
+if ( count == 5 )
+continue; // skip remaining loop code only if count == 5
+document.writeln( count + " " );
+} //end for
+	
+document.writeln( "<p>Used continue to skip printing 5</p>" );
+</script>
+</head><body></body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- Fig. 14.20: fillingwindow.html -->
+<!-- Resizing a canvas to fill the window -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Filling the Window</title>
+		<style type = "text/css">
+			canvas { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; } 
+		</style>
+`</head>
+
+<body>
+	<canvas id = "resize"></canvas>
+	
+	<script>
+		function draw()
+		{
+			var canvas = document.getElementById ( "resize" ); 
+			var context = canvas.getContext ( "2d" );
+			context.fillStyle = "yellow"; 
+			context.fillRect( 0, 0, context.canvas.width, context.canvas.height )
+		} // end function draw
+	
+		window.addEventListener ( "load", draw, false ); 
+	</script>
+</body>
+</html>

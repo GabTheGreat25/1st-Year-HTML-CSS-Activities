@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- Fig. 14. 17: text.html -->
+<!-- Drawing text on a canvas. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Text</title>
+</head>
+
+<body>
+	<canvas id = "text" width = "330" height = "100"
+		style = "border: 1px solid black;">
+	</canvas>
+	<script>
+		var canvas = document.getElementById("text");
+		var context = canvas.getContext("2d")
+	
+		// draw the first line of text
+		context.fillStyle = "red";
+		context.font = "italic 24px serif";
+		context.textBaseline = "top";
+		context.fillText ("HTML5 Canvas", 0, 0);
+		
+		// draw the second line of text
+		context.font = "bold 30px sans-serif";
+		context.textAlign = "centeer";
+		context.lineWidth = 2;
+		context.strokeStyle = "navy";
+		context.strokeText("HTML5 Canvas", 115, 50);
+	</script>
+</body>
+</html>
+
+

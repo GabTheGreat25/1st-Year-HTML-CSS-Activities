@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flexible Box Layout Model</title>
+	<link href = "http://fonts.googleapis.com/css?family=Calligraffitti"
+	rel = "stylesheet" type = "text/css">
+	<style type = "text/css">
+		.flexbox
+		{
+			width: 600px;
+			height 400px;
+			display: -webkit-box;
+			display: box;
+			-webkit-box-orient: horizontal;
+			box-orient: horizontal;
+		}
+		.flexbox > div
+		{
+			-webkit-transition: 1s ease-out;
+			transition: 1s ease-out;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			border: 2px solid black;
+			width: 120px;
+			margin: 10px -10px 10px 0px;
+			padding: 20px 20px 20px 20px;
+			box-shadow: 10px 10px 10px dimgrey;
+		}
+		.flexbox > div:nth-child(1){background-color: lightgrey; }
+		.flexbox > div:nth-child(2){background-color: lightgrey; }
+		.flexbox > div:nth-child(3){background-color: lightgrey; }
+		.flexbox > div:nth-child(4){background-color: lightgrey; }
+		
+		.flexbox > div:hover 
+		{width: 200px; color: white; font-weight: bold}
+		.flexbox > div:nth-child(1){hover: royalblue; }
+		.flexbox > div:nth-child(2){hover: crimson; }
+		.flexbox > div:nth-child(3){hover: crimson; }
+		.flexbox > div:nth-child(4){hover: darkgreen; }
+		p { height: 250px; overflow: hidden; font-family: "Rosario"}
+	</style>
+</head>
+
+<body>
+	<div class = "flexbox">
+<div><img src = "Pictures/Good JOb.JPG" alt =  "Good Programming practice icon">
+<p>Good Programming Practices call attention to techniques that will help you produce programs that are clearer, more
+	understandable and more maintainable.</p></div>
+<div><img src = "Pictures/Error.JPG" alt = "Error prevention tip icon">
+<p>Error Prevention Tips contain suggestions for exposing bugs and removing them from your programs; many describe aspects of
+	programming that prevent bugs from getting into programs in the first place.</p></div>
+<div><img src = "Pictures/Bad Job.JPG" alt = "Common programming error icon">
+<p>Common Programming Errors point out the errors that students tend to make frequently. These common programming errors reduce the likelihood that you'll make the same mistakes.</p></div>
+<div><img src = "Pictures/software.JPG" alt = "Software Engineering Observations icon">
+<p>Software Engineering Observations highlight architectural and design issues that affect the construction of software systems, especially large-scale
+	systems.</p></div>
+	</div>
+</body>
+</html>

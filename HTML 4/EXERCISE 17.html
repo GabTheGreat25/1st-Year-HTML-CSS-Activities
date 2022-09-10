@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+	<style type = "text/css">
+	p
+		{ margin: 0.9em 0em; }
+	@media handheld and (max-width: 480px),
+		screen and (max-device-width: 480px),
+		screen and (max-width: 480px)
+	{
+		div {
+			-webkit-column-count: 1;
+			column-count: 1;
+			}
+		}
+	@media only screen and (min-width: 481px) and (max-width: 1024px)
+	{
+		div{
+			-webkit-column-count: 2;
+			column-count: 2;
+			-webkit-column-gap: 30px;
+			column-gap: 30px;
+			-webkit-column-rule: lpx outset black;
+			colum-rule: lpx outset black; 
+			}
+		}
+	@media only screen and (min-width: 1025px)
+	{
+		div{
+			-webkit-column-count: 3;
+			column-count: 3;
+			-webkit-column-gap: 30px;
+			column-gap: 30px;
+			-webkit-column-rule: lpx outset black;
+			colum-rule: lpx outset black; 
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	<h1>Computers, Hardware and Software</h1>
+	<div>
+	<p>A computer is a device that can perform computations and make logic decisions phenomenally faster than human beings can.
+Many of today's personal computers can perform billions of calculations in one than a human can perform in a lifetime. Supercomputers are already performing thousands of trillions (quadrillions) of instructions per second! To put that in perspective, a quadrillion-instruction-per-second
+computer can perform in one second more than 100,000 calculations for every person on the planet! And&mdash;these "upper limits" are growing quickly!</p>
+		
+	<p>Computers process data under the control of sets of instructions called computer programs. These programs guide the computer through orderly sets of actions specified by people called computer programmers. The programs that run on a computer are referred to as software. In this book, you'll learn today's key programming methodology that's enhancing prograrwner productivity, thereby reducing software-development costs&mdash;object-oriented programming.</p>
+		
+	<p>A computer consists of various devices referred to as hardware (e.g., the keyboard, screen, mouse, hard disks, memory, DVDs and processing units). Computing costs are dropping dramatical1y, owing to rapid devel opments in hardware and software technologies. Computers that might have fi1led large
+rooms and cost millions of dollars decades ago are now inscribed on silicon chips smaller than a fingernail, costing perhaps a few dollars each. Ironically, silicon is one of the most abundant materials&mdash;it's an ingredient in common sand. Silicon-chip technology has made computing so economical that more than a billion general-purpose computers are in use worldwide, and this is expected to double in the next few years.</p>
+		
+	<p>Computer chips (microprocessors) control countless devices. These embedded systems include anti-lock brakes in cars, navigation systems, smart home appliances, home security systems, cell phones and smartphones, robots, intelligent traffic intersections, collision avoidance systems, video game controllers and more. The vast majority Of the microprocessors produced each year are embedded in devices other than general-purpose computers.</p>
+		<footer>
+			<em>&copy; 2012 by Pearson Education, Inc. All Rights Reserved.</em>
+			</footer>
+	</div>
+	</header>
+</body>
+</html>

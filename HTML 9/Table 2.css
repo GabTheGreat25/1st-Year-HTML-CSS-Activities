@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+table {
+width: 275px;
+}
+th {
+text-align: left;
+} I
+table, th, td {
+border: 1px solid #000;
+}
+tr:nth-child(odd) {
+background-color: #F3FF00;
+}
+tr:nth-child(even) {
+background-color: #FF0000;
+}
+th {
+background-color: #0700FF;
+}
+
+table {
+width: 275px;
+}
+th {
+text-align: left;
+} I
+table, th, td {
+border: 1px solid #000;	
+}
+tr:nth-child(odd) {
+background-color: #F3FF00;
+}
+tr:nth-child(even) {
+background-color: #FF0000;
+}
+th {
+background-color: #0700FF;
+}
+
+table {
+width: 275px;
+}
+th {
+text-align: left;
+} I
+table, th, td {
+border: 1px solid #000;	
+}
+tr:nth-child(odd) {
+background-color: #F3FF00;
+}
+tr:nth-child(even) {
+background-color: #FF0000;
+}
+th {
+background-color: #0700FF;
+}
